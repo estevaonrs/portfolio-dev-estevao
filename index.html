@@ -1,1 +1,743 @@
-oi
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>ClickMenu</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+    <!-- Icon -->
+    <link rel="stylesheet" href="{% static 'assets/fonts/line-icons.css' %}">
+    <!-- Owl carousel -->
+    <link rel="stylesheet" href="{% static 'assets/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.theme.css' %}">
+
+    <!-- Animate -->
+    <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
+    <!-- Main Style -->
+    <link rel="stylesheet" href="{% static 'assets/css/main.css' %}">
+    <!-- Responsive Style -->
+    <link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}">
+
+</head>
+
+<body>
+
+    <!-- Header Area wrapper Starts -->
+    <header id="header-wrap">
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-md bg-inverse fixed-top scrolling-navbar">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <a href="/" class="navbar-brand"><img src="{% static 'assets/img/logo3.png' %}" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="lni-menu"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto w-100 justify-content-end clearfix">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#hero-area">
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">
+                                Serviços
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#team">
+                                Time
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#pricing">
+                                Planos
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#testimonial">
+                                Avaliações
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">
+                                Contato
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'accounts:create_accounts' %}">
+                                Cadastre-se
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'accounts:login' %}">
+                                Login
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar End -->
+
+        <!-- Hero Area Start -->
+        <div id="hero-area" class="hero-area-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
+                        <div class="contents">
+                            <h2 class="head-title">ClickMenu<br>O cardápio online favorito do Brasil!</h2>
+                            <p>Tenha um cardápio organizado e personalizado, com o ClickMenu, você categoriza todos os
+                                seus produtos. Com layout simples, seu cliente vai adorar!</p>
+                            <div class="header-button">
+                                <a href="{% url 'accounts:create_accounts' %}"
+                                    class="btn btn-common">Cadastre-se</i></a>
+                                <a href="{% url 'accounts:login' %}" class="btn btn-border video-popup">Logue em sua
+                                    conta</i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
+                        <div class="intro-img">
+                            <img class="img-fluid" src="{% static 'assets/img/intro-mobile.png'%}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hero Area End -->
+
+    </header>
+    <!-- Header Area wrapper End -->
+
+    <!-- Services Section Start -->
+    <section id="services" class="section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">Nossos Serviços</h2>
+                <div class="shape wow fadeInDown" data-wow-delay="0.3s"></div>
+            </div>
+            <div class="row">
+                <!-- Services item -->
+                <div class="col-md-6 col-lg-4 col-xs-12">
+                    <div class="services-item wow fadeInRight" data-wow-delay="0.3s">
+                        <div class="icon">
+                            <i class="lni-cog"></i>
+                        </div>
+                        <div class="services-content">
+                            <h3><a href="#">Fácil de usar</a></h3>
+                            <p>Manter o cardápio atualizado é sempre um problema? O ClickMenu resolve: edite o seu menu
+                                sempre que quiser! </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Services item -->
+                <div class="col-md-6 col-lg-4 col-xs-12">
+                    <div class="services-item wow fadeInRight" data-wow-delay="0.6s">
+                        <div class="icon">
+                            <i class="lni-stats-up"></i>
+                        </div>
+                        <div class="services-content">
+                            <h3><a href="#">Design Incrível</a></h3>
+                            <p>Nosso sistema, apesar de ser bem prático e fácil de usar, conta com toda a perfeição de
+                                um Design atraente para o seu cliente!</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Services item -->
+                <div class="col-md-6 col-lg-4 col-xs-12">
+                    <div class="services-item wow fadeInRight" data-wow-delay="0.9s">
+                        <div class="icon">
+                            <i class="lni-users"></i>
+                        </div>
+                        <div class="services-content">
+                            <h3><a href="#">Fácil de customizar</a></h3>
+                            <p>O ClickMenu vai além do básico e permite que você faça personalizações essenciais para
+                                seu cardápio. Simples como tem que ser! </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Services Section End -->
+
+    <!-- About Section start -->
+    <div class="about-area section-padding bg-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-xs-12 info">
+                    <div class="about-wrapper wow fadeInLeft" data-wow-delay="0.3s">
+                        <div>
+                            <div class="site-heading">
+                                <p class="mb-3">Gerenciamento detalhado</p>
+                                <h2 class="section-title">Tenha um gerenciamento detalhado acerca de seus cardápios e
+                                    pedidos online!</h2>
+                            </div>
+                            <div class="content">
+                                <p>
+                                    Com o ClickMenu, você pode cadastrar quantos estabelecimentos quiser, e na palma da
+                                    sua mão, criar cardápios, gerenciar pedidos online, compartilhar o link de seu menu
+                                    em qualquer rede social, entre outras coisas!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-xs-12 wow fadeInRight" data-wow-delay="0.3s">
+                    <img class="img-fluid" src="{% static 'assets/img/about/img-1.png'%}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About Section End -->
+
+    <!-- Features Section Start -->
+    <section id="features" class="section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">Perguntas frequentes</h2>
+                <div class="shape wow fadeInDown" data-wow-delay="0.3s"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                    <div class="content-left">
+                        <div class="box-item wow fadeInLeft" data-wow-delay="0.3s">
+                            <span class="icon">
+                                <i class="lni-rocket"></i>
+                            </span>
+                            <div class="text text-left">
+                                <h4>O CickMenu é apenas para restaurantes?</h4>
+                                <br>
+                                <p>Não! O CickMenu serve para qualquer estabelecimento que receba pedidos de delivery,
+                                    pedidos na mesa ou encomendas.</p>
+                            </div>
+                        </div>
+                        <div class="box-item wow fadeInLeft" data-wow-delay="0.6s">
+                            <span class="icon">
+                                <i class="lni-laptop-phone"></i>
+                            </span>
+                            <div class="text text-left">
+                                <h4>Como funciona o cardápio online?</h4>
+                                <p>O cardápio online é a versão digital do seu cardápio físico,
+                                    com a diferença de que seus clientes poderão acessá-lo de onde estiverem
+                                    e quando quiserem, com informações, fotos e preços sempre atualizados.
+                                    Ahhh, e o cardápio pode ser compartilhado pelo Whatsapp, Instagram ou
+                                    qualquer outra rede social com seus clientes, facilitando seus pedidos.</p>
+                            </div>
+                        </div>
+                        <div class="box-item wow fadeInc" data-wow-delay="0.9s">
+                            <span class="icon">
+                                <i class="lni-cog"></i>
+                            </span>
+                            <div class="text text-left">
+                                <h4>Como divulgar meu cardápio?</h4>
+                                <p>Com seu cardápio pronto, basta compartilhar o link com seus clientes pelo Whatsapp,
+                                    Instagram, Facebook e outras redes sociais ;)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                    <div class="show-box wow fadeInUp" data-wow-delay="0.3s">
+                        <img src="{% static 'assets/img/feature/intro-mobile.png'%}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                    <div class="content-right">
+                        <div class="box-item wow fadeInRight" data-wow-delay="0.3s">
+                            <span class="icon">
+                                <i class="lni-leaf"></i>
+                            </span>
+                            <div class="text text-left">
+                                <h4>Como criar o cardápio online?</h4>
+                                <p>Depois que você cadastrar seu estabelecimento, poderá começar adicionar os
+                                    itens no seu cardápio imediatamente, incluindo descrição, foto e preço.
+                                    Quando terminar, basta compartilhar o link do seu cardápio com seus clientes pelo
+                                    Whatsapp, Instagram, Facebook e outras redes sociais. Pela experiência, em menos
+                                    de 30 minutos nossos clientes conseguem fazer isso. Bem fácil e rápido.</p>
+                            </div>
+                        </div>
+                        <div class="box-item wow fadeInRight" data-wow-delay="0.6s">
+                            <span class="icon">
+                                <i class="lni-layers"></i>
+                            </span>
+                            <div class="text">
+                                <h4>Como faço para imprimir o cardápio?</h4>
+                                <p>O ClickMenu te ajuda a criar a versão digital do seu cardápio, que pode ser
+                                    compartilhado
+                                    com seus clientes pelo Whatsapp, Instagram e outras redes sociais. Por isso, não
+                                    possui a
+                                    funcionalidade para imprimir o cardápio. Nossos cliente entenderam que nao precisam
+                                    mais usar o
+                                    cardápio em papel, mas somente o cardápio digital, pois é isso que trás praticidade
+                                    e economia.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- Features Section End -->
+
+    <!-- Team Section Start -->
+    <section id="team" class="section-padding bg-gray">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">Conheça nosso time</h2>
+                <div class="shape wow fadeInDown" data-wow-delay="0.3s"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-xs-12">
+                    <!-- Team Item Starts -->
+                    <div class="team-item wow fadeInRight" data-wow-delay="0.2s">
+                        <div class="team-img">
+                            <img class="img-fluid" src="{% static 'assets/img/team/team-01.png'%}" alt="">
+                        </div>
+                        <div class="contetn">
+                            <div class="info-text">
+                                <h3><a href="#">Estevão Ferreira</a></h3>
+                                <p>Back-end Developer</p>
+                            </div>
+                            <p>Especialista em aplicações WEB, Estevão é um profissional capacitado que cuida de todo o
+                                site.</p>
+                            <ul class="social-icons">
+                                <li><a href="#"><i class="lni-facebook-filled" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="lni-twitter-filled" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="lni-instagram-filled" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Team Item Ends -->
+                </div>
+                <div class="col-lg-6 col-md-12 col-xs-12">
+                    <!-- Team Item Starts -->
+                    <div class="team-item wow fadeInRight" data-wow-delay="0.4s">
+                        <div class="team-img">
+                            <img class="img-fluid" src="{% static 'assets/img/team/team-02.png'%}" alt="">
+                        </div>
+                        <div class="contetn">
+                            <div class="info-text">
+                                <h3><a href="#">ERIC PETERSON</a></h3>
+                                <p>Product Designer</p>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic
+                                tenetur.</p>
+                            <ul class="social-icons">
+                                <li><a href="#"><i class="lni-facebook-filled" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="lni-twitter-filled" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="lni-instagram-filled" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Team Item Ends -->
+                </div>
+                <div class="col-lg-6 col-md-12 col-xs-12">
+                    <!-- Team Item Starts -->
+                    <div class="team-item wow fadeInRight" data-wow-delay="0.6s">
+                        <div class="team-img">
+                            <img class="img-fluid" src="{% static 'assets/img/team/team-03.png'%}" alt="">
+                        </div>
+                        <div class="contetn">
+                            <div class="info-text">
+                                <h3><a href="#">DURWIN BABB</a></h3>
+                                <p>Lead Designer</p>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic
+                                tenetur.</p>
+                            <ul class="social-icons">
+                                <li><a href="#"><i class="lni-facebook-filled" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="lni-twitter-filled" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="lni-instagram-filled" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Team Item Ends -->
+                </div>
+                <div class="col-lg-6 col-md-12 col-xs-12">
+                    <!-- Team Item Starts -->
+                    <div class="team-item wow fadeInRight" data-wow-delay="0.8s">
+                        <div class="team-img">
+                            <img class="img-fluid" src="{% static 'assets/img/team/team-04.png'%}" alt="">
+                        </div>
+                        <div class="contetn">
+                            <div class="info-text">
+                                <h3><a href="#">MARIJN OTTE</a></h3>
+                                <p>Lead Designer</p>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic
+                                tenetur.</p>
+                            <ul class="social-icons">
+                                <li><a href="#"><i class="lni-facebook-filled" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="lni-twitter-filled" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="lni-instagram-filled" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Team Item Ends -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Team Section End -->
+
+    <!-- Pricing section Start -->
+    <section id="pricing" class="section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">Planos</h2>
+                <div class="shape wow fadeInDown" data-wow-delay="0.3s"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-xs-12">
+                    <div class="table wow fadeInLeft" data-wow-delay="1.2s">
+                        <div class="icon-box">
+                            <i class="lni-package"></i>
+                        </div>
+                        <div class="pricing-header">
+                            <p class="price-value">R$40<span> /mês</span></p>
+                        </div>
+                        <div class="title">
+                            <h3>Gold</h3>
+                        </div>
+                        <ul class="description">
+                            <li>Pode cadastrar até 1 estabelecimento</li>
+                            <li>30 dias de licença para utilizar o ClickMenu</li>
+                            <li>Suporte por e-mail</li>
+                        </ul>
+                        <button class="btn btn-common">Assine agora!</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-xs-12 active">
+                    <div class="table wow fadeInUp" id="active-tb" data-wow-delay="1.2s">
+                        <div class="icon-box">
+                            <i class="lni-drop"></i>
+                        </div>
+                        <div class="pricing-header">
+                            <p class="price-value">R$110<span> /3 meses</span></p>
+                        </div>
+                        <div class="title">
+                            <h3>Platina</h3>
+                        </div>
+                        <ul class="description">
+                            <li>Pode cadastrar até 2 estabelecimentos</li>
+                            <li>3 meses de licença para utilizar o ClickMenu</li>
+                            <li>Prioridade ao nosso suporte</li>
+                        </ul>
+                        <button class="btn btn-common">Assine agora!</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-xs-12">
+                    <div class="table wow fadeInRight" data-wow-delay="1.2s">
+                        <div class="icon-box">
+                            <i class="lni-star"></i>
+                        </div>
+                        <div class="pricing-header">
+                            <p class="price-value">R$1.100<span> /ano</span></p>
+                        </div>
+                        <div class="title">
+                            <h3>Diamante</h3>
+                        </div>
+                        <ul class="description">
+                            <li>Estabelecimentos ilimitados</li>
+                            <li>1 ANO de licença para utilizar o ClickMenu</li>
+                            <li>Suporte 24 horas</li>
+                        </ul>
+                        <button class="btn btn-common">Assine agora!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Pricing Table Section End -->
+
+    <!-- Testimonial Section Start -->
+    <section id="testimonial" class="testimonial section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">Avaliações de nossos usuários</h2>
+                <div class="shape wow fadeInDown" data-wow-delay="0.3s"></div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div id="testimonials" class="owl-carousel wow fadeInUp" data-wow-delay="1.2s">
+                        <div class="item">
+                            <div class="testimonial-item">
+                                <div class="img-thumb">
+                                    <img src="{% static 'assets/img/testimonial/img1.jpg'%}" alt="">
+                                </div>
+                                <div class="info">
+                                    <h2><a href="#">David Smith</a></h2>
+                                    <h3><a href="#">Creative Head</a></h3>
+                                </div>
+                                <div class="content">
+                                    <p class="description">Praesent cursus nulla non arcu tempor, ut egestas elit
+                                        tempus. In ac ex fermentum, gravida felis nec, tincidunt ligula.</p>
+                                    <div class="star-icon mt-3">
+                                        <span><i class="lni-star-filled"></i></span>
+                                        <span><i class="lni-star-filled"></i></span>
+                                        <span><i class="lni-star-filled"></i></span>
+                                        <span><i class="lni-star-filled"></i></span>
+                                        <span><i class="lni-star-half"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonial-item">
+                                <div class="img-thumb">
+                                    <img src="{% static 'assets/img/testimonial/img2.jpg'%}" alt="">
+                                </div>
+                                <div class="info">
+                                    <h2><a href="#">Domeni GEsson</a></h2>
+                                    <h3><a href="#">Awesome Technology co.</a></h3>
+                                </div>
+                                <div class="content">
+                                    <p class="description">Praesent cursus nulla non arcu tempor, ut egestas elit
+                                        tempus. In ac ex fermentum, gravida felis nec, tincidunt ligula.</p>
+                                    <div class="star-icon mt-3">
+                                        <span><i class="lni-star-filled"></i></span>
+                                        <span><i class="lni-star-filled"></i></span>
+                                        <span><i class="lni-star-filled"></i></span>
+                                        <span><i class="lni-star-filled"></i></span>
+                                        <span><i class="lni-star-filled"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonial-item">
+                                <div class="img-thumb">
+                                    <img src="{% static 'assets/img/testimonial/img3.jpg'%}" alt="">
+                                </div>
+                                <div class="info">
+                                    <h2><a href="#">Dommini Albert</a></h2>
+                                    <h3><a href="#">Nesnal Design co.</a></h3>
+                                </div>
+                                <div class="content">
+                                    <p class="description">Praesent cursus nulla non arcu tempor, ut egestas elit
+                                        tempus. In ac ex fermentum, gravida felis nec, tincidunt ligula.</p>
+                                    <div class="star-icon mt-3">
+                                        <span><i class="lni-star-filled"></i></span>
+                                        <span><i class="lni-star-filled"></i></span>
+                                        <span><i class="lni-star-filled"></i></span>
+                                        <span><i class="lni-star-filled"></i></span>
+                                        <span><i class="lni-star-filled"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonial-item">
+                                <div class="img-thumb">
+                                    <img src="{% static 'assets/img/testimonial/img4.jpg'%}" alt="">
+                                </div>
+                                <div class="info">
+                                    <h2><a href="#">Fernanda Anaya</a></h2>
+                                    <h3><a href="#">Developer</a></h3>
+                                </div>
+                                <div class="content">
+                                    <p class="description">Praesent cursus nulla non arcu tempor, ut egestas elit
+                                        tempus. In ac ex fermentum, gravida felis nec, tincidunt ligula.</p>
+                                    <div class="star-icon mt-3">
+                                        <span><i class="lni-star-filled"></i></span>
+                                        <span><i class="lni-star-filled"></i></span>
+                                        <span><i class="lni-star-filled"></i></span>
+                                        <span><i class="lni-star-filled"></i></span>
+                                        <span><i class="lni-star-filled"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section End -->
+
+    <!-- Call To Action Section Start -->
+    <section id="cta" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-xs-12 wow fadeInLeft" data-wow-delay="0.3s">
+                    <div class="cta-text">
+                        <h4>Ganhe 7 dias de teste para utilizar o ClickMenu</h4>
+                        <p>Cadastre-se em nosso site e ganhe 7 dias para utilizar o nosso cardápio digital! </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-xs-12 text-right wow fadeInRight" data-wow-delay="0.3s">
+                    </br><a href="{% url 'accounts:create_accounts' %}" class="btn btn-common">Cadastre-se</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Call To Action Section Start -->
+
+    <!-- Contact Section Start -->
+    <section id="contact" class="section-padding bg-gray">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">Fale conosco</h2>
+                <div class="shape wow fadeInDown" data-wow-delay="0.3s"></div>
+            </div>
+            <div class="row contact-form-area wow fadeInUp" data-wow-delay="0.3s">
+                <div class="col-lg-7 col-md-12 col-sm-12">
+                    <div class="contact-block">
+                        <form id="contactForm">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="name" name="name" placeholder="Nome"
+                                            required data-error="Por favor, digite o seu nome">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" placeholder="Email" id="email" class="form-control"
+                                            name="email" required data-error="Por favor, digite o seu e-mail">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <input type="text" placeholder="Assunto" id="msg_subject" class="form-control"
+                                            required data-error="Escreva seu assunto">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <textarea class="form-control" id="message" placeholder="Sua mensagem" rows="7"
+                                            data-error="Escreva a sua mensagem" required></textarea>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="submit-button text-left">
+                                        <button class="btn btn-common" id="form-submit" type="submit">Enviar
+                                            e-mail</button>
+                                        <div id="msgSubmit" class="h3 text-center hidden"></div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-12 col-xs-12">
+                    <div class="map">
+                        <object style="border:0; height: 280px; width: 100%;"
+                            data="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d34015.943594576835!2d-106.43242624069771!3d31.677719472407432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86e75d90e99d597b%3A0x6cd3eb9a9fcd23f1!2sCourtyard+by+Marriott+Ciudad+Juarez!5e0!3m2!1sen!2sbd!4v1533791187584"></object>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section End -->
+
+    <!-- Footer Section Start -->
+    <footer id="footer" class="footer-area section-padding">
+        <div class="container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12">
+                        <div class="widget">
+                            <h3 class="footer-logo"><img src="{% static 'assets/img/logo3.png'%}" alt=""></h3>
+                            <div class="textwidget">
+                                <p>O cardápio online favorito do Brasil!</p>
+                            </div>
+                            <div class="social-icon">
+                                <a class="facebook" href="#"><i class="lni-facebook-filled"></i></a>
+                                <a class="twitter" href="#"><i class="lni-twitter-filled"></i></a>
+                                <a class="instagram" href="#"><i class="lni-instagram-filled"></i></a>
+                                <a class="linkedin" href="#"><i class="lni-linkedin-filled"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                        <h3 class="footer-titel">Produtos</h3>
+                        <ul class="footer-link">
+                            <li><a href="#">Cardápio online</a></li>
+                            <li><a href="#">Gerenciamento detalhado</a></li>
+                            <li><a href="#">Redução de gastos com papel</a></li>
+                            <li><a href="#">Cardápio sempre atualizado</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                        <h3 class="footer-titel">Recursos</h3>
+                        <ul class="footer-link">
+                            <li><a href="#">Gerenciamento detalhado</a></li>
+                            <li><a href="#">Compartilhamento em redes sociais</a></li>
+                            <li><a href="#">Praticidade no atendimento</a></li>
+                            <li><a href="#">Modernização do seu trabalho</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                        <h3 class="footer-titel">Contato</h3>
+                        <ul class="address">
+                            <li>
+                                <a href="#"><i class="lni-map-marker"></i> Maracanaú <br> Ceará - Brasil</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="lni-phone-handset"></i> Telefone: +55 (85) 9.8553-9090</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="lni-envelope"></i> E-mail: estevaofpequeno@gmail.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="copyright-content">
+                            <p>Todos os direitos reservados</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Go to Top Link -->
+    <a href="#" class="back-to-top">
+        <i class="lni-arrow-up"></i>
+    </a>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader" id="loader-1"></div>
+    </div>
+    <!-- End Preloader -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="{% static 'assets/js/jquery-min.js' %}"></script>
+    <script src="{% static 'assets/js/popper.min.js' %}"></script>
+    <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'assets/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'assets/js/wow.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.nav.js' %}"></script>
+    <script src="{% static 'assets/js/scrolling-nav.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.easing.min.js' %}"></script>
+    <script src="{% static 'assets/js/main.js' %}"></script>
+    <script src="{% static 'assets/js/form-validator.min.js' %}"></script>
+    <script src="{% static 'assets/js/contact-form-script.min.js' %}"></script>
+
+</body>
+
+</html>
